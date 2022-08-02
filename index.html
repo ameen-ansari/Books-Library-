@@ -14,6 +14,11 @@
         defer></script>
         <script src="./js.js" defer></script>
         <link rel="stylesheet" href="./css.css">
+        <style>
+            .warn{
+                display: none;
+            }
+        </style>
 </head>
 
 <body>
@@ -22,39 +27,45 @@
     <!-- textareaa -->
     <div class="mb-3 container">
         <label for="exampleFormControlInput1" class="form-label">Book Name</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter Book Name Here">
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter Book Name">
     </div>
     <div class="mb-3 container">
         <label for="exampleFormControlTextarea1" class="form-label">Auther Name</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Auther Name"></textarea>
+        <input type="text" class="form-control" id="exampleFormControlTextarea1" placeholder="Enter Auther Name">
     </div>
 
     <!-- Radio Buttons -->
-    <div class="mb-3 container d-flex flex-column justify-content-center align-item-center">
+    <h4><b class="mx-auto d-block w-50">Select Type</b></h4>
+    <div class="w-50 mb-3 container d-flex flex-row justify-content-between align-item-center">
         <div class="form-check container">
             <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
             <label class="form-check-label" for="exampleRadios1">
-                A
+                Math
             </label>
         </div>
         <div class="form-check container">
             <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
             <label class="form-check-label" for="exampleRadios2">
-                B
+                Physics
             </label>
         </div>
         <div class="form-check container ">
             <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
             <label class="form-check-label" for="exampleRadios3">
-                C
+                Others
             </label>
         </div>
     </div>
 
     <!-- Simple Buttons -->
-    <div class="mb-3 d-flex justify-content-center">
+    <div class="mb-3 d-flex justify-content-center w-25 mx-auto">
         <button type="button" class="save btn btn-primary btn-sm m-2">Save</button>
         <button type="button" class="clear btn btn-danger btn-sm m-2">Clear</button>
+    </div>
+
+    <!-- warning -->
+    <div class="w-50 bg-danger rounded text-center text-white mx-auto my-1 warn">
+        <p>Please insert Book & Auther Name</p>
     </div>
 
     <!-- Table -->
@@ -64,10 +75,10 @@
             <th class="w-25">Books</th>
             <th class="w-25">Writer</th>
             <th class="w-25">Type</th>
-            <th class="w-25">Delete button</th>
+            <th class="w-25">Buttons</th>
         </tr>
     </table>
 
 </body>
-
+<script src="./search.js"></script>
 </html>
