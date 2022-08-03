@@ -61,7 +61,7 @@ clear.addEventListener('click', function () {
     <th class="w-25">Books</th>
    <th class="w-25">Writer</th>
     <th class="w-25">Type</th>
-    <th class="w-25">Delete button</th>
+    <th class="w-25">Buttons</th>
 </tr>`
     array = [1]
   }
